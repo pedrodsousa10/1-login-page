@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0; /*Remove as margens padrão de todos os elementos*/
+    padding: 0; /*Remove o preenchimento padrão de todos os elementos*/
+    box-sizing: border-box; /*Define o modelo de caixa para incluir bordas e preenchimento no tamanho total do elemento*/
+    font-family: "Poppins", sans-serif; /*Define a fonte padrão para a página*/
+}
+
+body {
+    display: flex; /*Define o layout como flexível para centralizar o conteúdo*/
+    justify-content: center; /*Centraliza o conteúdo horizontalmente*/
+    align-items: center; /*Centraliza o conteúdo verticalmente*/
+    height: 100vh; /*Define a altura da tela para 100% da altura da janela de visualização*/
+    background: url(./img/img.jpg); /*Define a imagem de fundo para a página*/
+    background-size: cover; /*Faz com que a imagem de fundo cubra toda a área da página*/
+    background-position: center; /*Centraliza a imagem de fundo*/
+}
+
+.container {
+    width: 420px; /*Define a largura do conteiner do formulário*/
+    background-color: transparent; /*Define a cor de fundo do conteiner como transparente*/
+    border: 2px solid rgba(255, 255, 255, .2); /*Define uma borda com cor cinza*/
+    border-radius: 10px; /*Define bordas arredondadas para o container*/
+    color: #fff; /*Define a cor do texto dentro do container como branco*/
+    padding: 30px 40px; /*Define o preenchimento interno do container*/
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2); /*Adiciona uma sombra ao redor do container para dar profundidade*/
+    backdrop-filter: blur(50px);/*Adiciona um efeito de desfoque ao fundo do container para criar um efeito de vidro fosco*/
+}
+
+.container h1 {
+    font-size: 36px; /*Define o tamanho da fonte para o titulo do formulário*/
+    text-align: center; /*Centraliza o texto do título*/
+
+}
+
+.input-box {
+    position: relative; /*Define a posição como relativa para permitir o posicionamento absoluto dos ícones*/
+    width: 100%; /*Define a largura do input-box para 100% do container*/
+    height: 50px; /*Define a altura do input-box*/
+    margin: 30px 0; /*define a margem superior e inferior do input-box*/
+}
+
+.input-box input {
+    width: 100%; /*Para ele ocupar todo o espaço dispinível*/
+    height: 100%; /*Para ele ocupar toda a altura*/
+    background-color: transparent; /*Define a cor de fundo do input como transparente*/
+    border: 2px solid rgba(255, 255, 255, .2); /*Remove a borda padrão do input*/
+    border-radius:  40px;;
+    outline: none; /*Remove o contorno padrão do input quando ele estiver sendo clicado*/
+    color: #fff;
+    padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+    color: #c2bfbf;
+}
+
+.input-box i {
+    position: absolute; /*Define a posição como absoluta para posicionar os ícones dentro do input-box*/
+    right: 20px; /*Posiciona o icone a 20px da borda direita do input-box*/
+    top: 50%; /*Posiciona o icone verticalmente no meio do input-box*/
+    transform: translateY(-50%);/*Centraliza o icone verticalmente dentro do input-box*/
+    font-size: 20px;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between; /*Espaça os elementos dentro do remember-forgot igualmente*/
+    margin: -15px 0 15px; /*Define a margem superior e inferior do remember-forgot*/
+}
+
+.remember-forgot label input {
+    accent-color:#fff; /*Define a cor do checkbox como branco*/
+    margin-right: 5px; /*Adiciona uma margem à direita do checkbox para separar o texto*/
+}
+
+.remember-forgot a {
+    text-decoration: none; /*Remove o sublinhado do link*/
+    color: #fff;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline; /*Adiciona um sublinhado ao link quando o mouse passar por cima*/
+}
+
+.login {
+    width: 100%;
+    height: 50px;
+    background-color: #fff;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer; /*Adiciona um cursor de ponteiro ao passar o mouse sobre o botão*/
+    font-size: 16px;
+    color: #333;
+    font-weight: 600px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    margin-top: 20px;
+}
+
+.login:hover {
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    transition: 0.5s; /*Adiciona uma transição suave ao passar o mouse sobre o botão*/
+}
+
+.register-link {
+    font-size: 14px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.register-link a {
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+
+.register-link a:hover {
+    text-decoration: underline; /*Adiciona um sublinhado ao link*/
+}
